@@ -47,8 +47,8 @@ As in py-aiger, when writing combinatorial circuits, the Sequential
 Circuit DSL can be somewhat clumsy. For this common usecase, we have
 developed the BitVector Expression DSL. This DSL actually consists of
 two DSLs for signed and unsigned BitVectors.  All circuits generated
-this way have a single output word. We use a **big-endian** encoding
-where the most significant digit is the first element of the tuple
+this way have a single output word. We use a **little-endian** encoding
+where the least significant digit is the first element of the tuple
 representing the word. For signed numbers, two's complement is used.
 
 ```python
